@@ -1,5 +1,6 @@
 {
   "css.validate": false,
   "html.validate.styles": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "js/ts.validate.enabled": false
 }
