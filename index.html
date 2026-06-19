@@ -48,9 +48,6 @@
   gtag('config', 'G-V8S3KJ6M8V');
 </script>
 	<meta charset="utf-8">
-	
-	
-	
 	<!-- Start of headStart -->
     
     <!-- End of headStart -->
@@ -382,58 +379,6 @@
     
     <!-- End of headEnd -->
 </head>
-
-<style>
-  #__framer-badge-container,.__framer-badge,
-  #__framer-editor-bar,#__framer-edit-bar,
-  [id*="framer-editor"],[class*="framer-editor"],
-  [data-framer-edit],[id*="edit-bar"],
-  .__framer-edit-button,
-  [class*="__framer-badge"],
-  a[href="https://www.framer.com"][title*="Framer"] {
-    display: none !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
-  }
-</style>
-<script>
-(function() {
-  function killFramerUI(node) {
-    if (!node || !node.matches) return;
-    if (
-      node.id === '__framer-badge-container' ||
-      node.id === '__framer-editor-bar' ||
-      node.id === '__framer-edit-bar' ||
-      (node.className && typeof node.className === 'string' && node.className.includes('__framer-badge')) ||
-      (node.tagName === 'A' && node.href && node.href.includes('framer.com') && node.title && node.title.includes('Framer'))
-    ) {
-      node.remove();
-    }
-    node.querySelectorAll && node.querySelectorAll(
-      '#__framer-badge-container, #__framer-editor-bar, .__framer-badge, a.__framer-badge, [class*="__framer-badge"]'
-    ).forEach(function(el) { el.remove(); });
-  }
-
-  var observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(m) {
-      m.addedNodes.forEach(function(node) {
-        if (node.nodeType === 1) killFramerUI(node);
-      });
-    });
-  });
-
-  function start() {
-    killFramerUI(document.body);
-    observer.observe(document.body, { childList: true, subtree: true });
-  }
-
-  if (document.body) { start(); }
-  else { document.addEventListener('DOMContentLoaded', start); }
-})();
-</script><body>
 	<script async="" src="https://events.framer.com/script/v%3D2" data-fid="edc0914fc6d3989d61c8fdd7c81232ec23526a019c559967bebb330cef3b9dab" data-no-nt=""></script>
 	<!-- Start of bodyStart -->
     
