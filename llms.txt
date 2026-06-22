@@ -1,0 +1,11 @@
+# Machfold Ventures
+> Machfold Ventures helps businesses scale through growth, automation, revenue, and digital systems.
+
+## Services
+- Growth Systems
+- Revenue Infrastructure
+- Automation Infrastructure
+- Digital Infrastructure
+
+## Contact
+- url: https://machfold.in/contact-me/
