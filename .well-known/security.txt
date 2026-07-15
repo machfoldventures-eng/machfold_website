@@ -1,4 +1,3 @@
-Contact: mailto:machfoldventures@gmail.com
-Canonical: https://machfold.in/.well-known/security.txt
+Contact: mailto:security@machfold.in
+Expires: 2027-07-15T00:00:00.000Z
 Preferred-Languages: en
-Expires: 2027-06-22T00:00:00Z

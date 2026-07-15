@@ -1,27 +1,16 @@
-# machfold_website
+# Machfold Ventures Website
 
-## Structure
-machfold_website/
-├── index.html           → machfold.in/
-├── contact-me/
-│   └── index.html       → machfold.in/contact-me/
-├── _redirects           → www.machfold.in → machfold.in (301)
-├── robots.txt           → Search engine crawl rules
-├── sitemap.xml          → Sitemap for Google indexing
-└── llms.txt             → AI crawler context
+This repository contains the localized, production-ready static assets for the Machfold Ventures website.
 
-## SEO Checklist
-- [x] Google Analytics on both pages
-- [x] Canonical URLs on both pages
-- [x] Open Graph + Twitter Card meta on both pages
-- [x] ProfessionalService JSON-LD schema on homepage
-- [x] ContactPage JSON-LD schema on contact page
-- [x] robots.txt with AI bot blocking
-- [x] llms.txt for AI crawler context
-- [x] sitemap.xml submitted to Google Search Console
-- [x] www → machfold.in 301 redirect
-- [x] Google site verification TXT records
-- [x] DMARC record
+## Architectural Summary
+- **No CDN Dependency**: All core dependencies, modules, fonts, and assets have been localized into `/assets` under appropriate category folders.
+- **Dynamic Routing**: Built as an optimized Single Page Application utilizing hydrated React module preloads.
+- **Formspree Endpoint**: The contact form is dynamically bound to `https://formspree.io` directly, stripping any third-party proof-of-work wrapping.
+- **URL Suffix Rewriter**: Integrated clean URL rewriter in the document heads corrects browser history states for static environments.
 
-## Pending
-- [ ] Google Business Profile → https://business.google.com
+## Deployment Details
+- **Hosting Target**: Cloudflare Pages.
+- **Supporting Configurations**:
+  - `_headers`: Defines secure headers including CSP (Content-Security-Policy).
+  - `_redirects`: Resolves Clean URLs and canonical domain settings.
+  - `sitemap.xml` & `robots.txt`: Hand-crafted to accurately map the localized pages.
